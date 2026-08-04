@@ -2,6 +2,7 @@ from yacc import *
 
 def run():
 
+    # specifying test
     tests_dir = "robot_scripts"
     test_name = "test_arrays.txt"
 
