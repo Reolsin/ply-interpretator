@@ -1,0 +1,42 @@
+UINT a
+res = 0 FUNCTION sum(first = 0, second = 0) {
+    WHILE second GT 0 DO {
+        INC first
+        DEC second
+        }
+    res = first
+}
+
+res = 0 FUNCTION mul(f = 0, s = 0) {
+    INC s
+    WHILE (DEC s) GT 0 DO {
+        [res] = sum(res, f)
+    }
+}
+
+res = 0 FUNCTION factorial(int = 1) {
+    UINT tmp = int
+    IF int GT 1 {
+        [tmp] = factorial(DEC tmp)
+        [res] = mul(int, tmp)
+    } ELSE {
+        res = 1
+    }
+}
+
+res = 1 FUNCTION while_factorial(int = 1) {
+    UINT i = 1
+    WHILE i LT int DO {
+        INC i
+        [res] = mul(res, i)
+    }
+}
+
+[a] = sum(5, 5)
+PRINT a
+[a] = mul(5, 5)
+PRINT a
+[a] = factorial(8)
+PRINT a
+[a] = while_factorial(4)
+PRINT a

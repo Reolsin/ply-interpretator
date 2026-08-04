@@ -1,0 +1,19 @@
+res = 0 FUNCTION sum(first = 0, second = 0) {
+    WHILE second GT 0 DO {
+        INC first
+        DEC second}
+    res = first
+}
+res = 0 FUNCTION fib(int = 1) {
+    UINT b = 1
+    UINT t
+    WHILE b LT int DO {
+        PRINT b
+        t = b
+        [b] = sum(res,b)
+        res = t
+        }
+    }
+
+UINT a
+[a] = fib(9)

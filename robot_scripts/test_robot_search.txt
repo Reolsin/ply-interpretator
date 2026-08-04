@@ -1,0 +1,7 @@
+WHILE LEFT DO BACK
+
+WHILE TRUE DO {
+    IF RIGHT {
+        WHILE LEFT DO {}
+    }
+}

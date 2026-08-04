@@ -1,0 +1,17 @@
+r = 0 FUNCTION f(a = FALSE) {
+    a = 4 GT 5
+    PRINT a
+    a = 4 LT 5
+    PRINT a
+    a = FALSE OR TRUE
+    PRINT a
+    a = NOT FALSE
+    PRINT a
+    UINT b = 5
+    b = INC b
+    PRINT b
+    b = DEC b
+    PRINT b
+}
+UINT a
+[a] = f()

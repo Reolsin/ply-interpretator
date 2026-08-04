@@ -1,0 +1,17 @@
+[r1 = 0, r2 = 5] FUNCTION f(a1 = 0, a2 = 5) {
+    PRINT r1
+    PRINT r2
+    INC a1
+    PRINT a1
+    PRINT a2
+}
+UINT a
+UINT b
+[a, b] = f(1, 1)
+PRINT a
+PRINT b
+[,] = f(, )
+
+[a, ] = f(b, )
+PRINT a
+PRINT b

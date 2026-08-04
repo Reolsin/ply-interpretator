@@ -1,0 +1,20 @@
+UINT int
+PRINT int
+UINT int = 5
+PRINT int
+CUINT cint = 5
+PRINT cint
+1DARRAYOFUINT arrint1 = [1, 2, 3]
+PRINT arrint1
+2DARRAYOFUINT arrint2 = [1, arrint1(2), int; ; cint, cint, 1]
+PRINT arrint2
+BOOLEAN b
+PRINT b
+BOOLEAN b = FALSE
+PRINT b
+CBOOLEAN cb = FALSE
+PRINT cb
+1DARRAYOFBOOL arrbool1 = [TRUE, cb]
+PRINT arrbool1
+2DARRAYOFBOOL arrbool2 = [cb, b; ; ;TRUE, arrbool1(1)]
+PRINT arrbool2

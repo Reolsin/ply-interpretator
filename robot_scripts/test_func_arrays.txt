@@ -1,0 +1,44 @@
+r = 0 FUNCTION f(a = 0) {
+    1DARRAYOFUINT a1 = [4, 5, 6]
+    PRINT a1
+    2DARRAYOFUINT a2 = [1, 2, 3; 3, 2, 1; ]
+    PRINT a2
+    1DARRAYOFBOOL b1 = [TRUE, FALSE]
+    PRINT b1
+    2DARRAYOFBOOL b2 = [TRUE, FALSE; ; ;TRUE, FALSE]
+    PRINT b2
+
+    EXTEND1 a1 4
+    PRINT a1
+    a1(3) = 5
+    PRINT a1
+    UINT a = a1(3)
+    PRINT a
+    a = INC a1(0)
+    PRINT a
+    PRINT a1
+    a = SIZE1 a1
+    PRINT a
+
+    EXTEND1 a2 4
+    PRINT a2
+    EXTEND2 a2 2 4
+    PRINT a2
+    a2(2,3) = 5
+    PRINT a2
+    a = a2(0,0)
+    PRINT a
+    a = INC a2(0,0)
+    PRINT a
+    PRINT a2
+    a = SIZE1 a2
+    PRINT a
+    a = SIZE2 a2 2
+    PRINT a
+    a2(1) = a1
+    PRINT a2
+    a1 = a2(0)
+    PRINT a1
+}
+UINT a
+[a] = f()
